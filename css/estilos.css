@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5960E8 !important;
+}
+.container {
+    background-color: #fafafa;
+    margin: 40px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+.container .contenido-principal {
+    padding: 40px;
+}
+.container .titulo-principal {
+    font-family: 'Ubuntu', sans-serif; 
+}
+.container .borde {
+    border-bottom: 4px #28df99 solid;
+    border-radius: 5px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .botones {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 10px -4px 11px -1px rgba(216,217,230,0.48);
+    -moz-box-shadow: 10px -4px 11px -1px rgba(216,217,230,0.48);
+box-shadow: 10px -4px 11px -1px rgba(216,217,230,0.48);
+}
+.container .botones .boton-mes {
+    background-color: #28df99;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    transition: .3s ease;
+}
+.container .botones .boton-mes:hover {
+    background-color: #8EDBAA;
+    transform: scale(1.1);
+}
+.container .botones .boton-mes:focus {
+    outline: none;
+} 
+.container .botones .boton-anio {
+    background-color: #e3ffef;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #28df99;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    transition: .3s ease;
+}
+.container .botones .boton-anio:hover {
+    background-color: #D4F8E2;
+    transform: scale(1.1);
+}
+.container .botones .boton-anio:focus {
+    outline: none;
+}
+.container .columnas {
+    padding: 5px;
+    display: inline-flex;
+    width: 140vh;
+}
+.container .columnas .iconos {
+    font-size: 50px;
+    color: #fff;
+    padding: 13px;
+    background-color: #28df99;
+    border-radius: 50%;
+    margin: 10px;
+}
+.container .columnas .contenido-col {
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 5px;
+}
+.container .columnas .contenido-col .nombres {
+    padding:10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container .columnas .contenido-col .precio {
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 50%;
+    display: contents;
+    padding: 20px 0 20px 0;
+}
+.container .columnas .contenido-col .precio-anio {
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 50%;
+    display: contents;
+    padding: 20px 0 20px 0;
+}
+.container .columnas .contenido-col .mes {
+    width: 50%;
+    padding: 20px 0 20px 0;
+    color: #838080;
+}
+.container .columnas .contenido-col .anio {
+    width: 50%;
+    padding: 20px 0 20px 0;
+    color: #838080;
+}
+.container .columnas .contenido-col .parrafo {
+    padding: 20px;
+    color: #838080;
+    white-space: pre-line;
+}
+.container .columnas .contenido-col .btn-sign {
+    background-color: #28df99;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 80%;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: .3s ease;
+}
+.container .columnas .contenido-col .btn-sign a {
+    color: #fff;
+    text-decoration: none;
+}
+.container .columnas .contenido-col .btn-sign:hover {
+    background-color: #8EDBAA;
+    transform: scale(1.1);
+}
+.container .columnas .contenido-col .btn-sign:focus {
+    outline: none;
+}
+
+/************MEDIA*************/
+@media only screen and(max-width: 480px) { 
+    .container .botones {
+        width: 74%;
+    }
+    .container .columnas  {
+        display: inline-block;
+    }
+    .container .botones .boton-mes {
+        margin-bottom: 5px;
+    } 
+}
+@media (max-width: 767px) {
+    .container .botones {
+        width: 74%;
+    }
+    .container .columnas  {
+        display: inline-block;
+    }
+    .container .botones .boton-mes {
+        margin-bottom: 5px;
+    } 
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container .botones {
+        width: 22%;
+    }
+}
